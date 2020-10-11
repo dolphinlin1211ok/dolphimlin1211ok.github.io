@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+#demo {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   animation-name:move;
+  animation-duration:2s; */
+}
+.char {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  animation-name: move;
+  animation-duration: 2s;
+  transform: -1000px;
+  animation-fill-mode: forwards;
+}
+.char:hover {
+  filter: blur(3px);
+}
+@keyframes move {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
